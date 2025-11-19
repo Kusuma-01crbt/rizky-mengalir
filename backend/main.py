@@ -4,12 +4,12 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"status": "aktif", "version": "demo-1.0"}
+    return {"status": "aktif", "versi": "demo-1.0"}
 
-@app.get("/bot-status")
-def bot_status():
+@app.get("/status-bot")
+def status_bot():
     return {
-        "bot": "running",
+        "bot": "berlari",
         "mode": "demo",
-        "message": "Siap mengalirkan rezeki"
+        "pesan": "Siap mengalirkan rezeki"
     }
